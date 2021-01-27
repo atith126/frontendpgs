@@ -3,6 +3,8 @@
 
 import { Button, Container, Row, Navbar, Form, FormControl, Nav, NavDropdown } from 'react-bootstrap';
 
+
+import { createHistory } from 'history';
 // import { BrowserRouter as Router, Switch, Route, useParams, } from "react-router-dom";
 import { HashRouter as Router, Route } from "react-router-dom";
 // import Home from './MainContainer';
@@ -13,7 +15,13 @@ import MainContainer from './MainContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
+// const browserHistory = useRouterHistory(createHistory)({
+// 		basename: '/frontendpgs'
+// });
+
 function App() {
+
+
   return (
 	<div className="App">
 	  {/* <header className="App-header"> */}
@@ -48,7 +56,7 @@ function App() {
 			<Route exact path="/frontendpgs">
 				<Home />
 			</Route>
-			<Route exact path="/frontendpgs/MainContainer">
+			<Route exact path="/MainContainer">
 				<MainContainer />
 			</Route>
 		{/* </Switch> */}
