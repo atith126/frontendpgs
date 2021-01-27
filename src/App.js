@@ -3,8 +3,8 @@
 
 import { Button, Container, Row, Navbar, Form, FormControl, Nav, NavDropdown } from 'react-bootstrap';
 
-// import { BrowserRouter as Router, Switch, Route, useParams, } from "react-router-dom";
-import { HashRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, useParams, } from "react-router-dom";
+// import { HashRouter as Router, Route } from "react-router-dom";
 // import Home from './MainContainer';
 import Home from './Home';
 import MainContainer from './MainContainer';
@@ -56,10 +56,10 @@ function App() {
 		  </Navbar>
 	<Router basename='/frontendpgs'>
 	  	{/* <Switch> */}
-			<Route exact path="/">
+			<Route exact path="/frontendpgs">
 				<Home />
 			</Route>
-			<Route exact path="/MainContainer">
+			<Route exact path="/frontendpgs/MainContainer">
 				<MainContainer />
 			</Route>
 		{/* </Switch> */}
