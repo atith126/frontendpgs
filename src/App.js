@@ -3,8 +3,8 @@
 
 import { Button, Container, Row, Navbar, Form, FormControl, Nav, NavDropdown } from 'react-bootstrap';
 
-import { BrowserRouter as Router, Switch, Route, useParams, } from "react-router-dom";
-// import { HashRouter as Router, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, useParams, } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 // import Home from './MainContainer';
 import Home from './Home';
 import MainContainer from './MainContainer';
