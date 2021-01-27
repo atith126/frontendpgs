@@ -46,14 +46,14 @@ function App() {
 			  <Navbar.Toggle aria-controls="basic-navbar-nav" />
 			  <Navbar.Collapse id="basic-navbar-nav">
 				  <Nav className="mr-auto">
-					  <Nav.Link href="/frontendpgs">Home</Nav.Link>
-					  <Nav.Link href="/frontendpgs/MainContainer">Link</Nav.Link>
+					  <Nav.Link href="/">Home</Nav.Link>
+					  <Nav.Link href="/MainContainer">Main Container</Nav.Link>
 				  </Nav>
 			  </Navbar.Collapse>
 		  </Navbar>
-	<Router basename='/frontendpgs'>
+	<Router basename='/'>
 	  	{/* <Switch> */}
-			<Route exact path="/frontendpgs">
+			<Route exact path="/">
 				<Home />
 			</Route>
 			<Route exact path="/MainContainer">
