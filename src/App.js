@@ -34,7 +34,7 @@ function App() {
 	</LinkContainer> */}
 	
 		<Navbar bg="light" expand="lg">
-			  <Navbar.Brand to="#home">React-Bootstrap</Navbar.Brand>
+			  <Navbar.Brand to="#home">React-Bootstrap 2</Navbar.Brand>
 			  <Navbar.Toggle aria-controls="basic-navbar-nav" />
 			  <Navbar.Collapse id="basic-navbar-nav">
 				  <Nav className="mr-auto">
