@@ -54,7 +54,7 @@ function App() {
 				  </Form>
 			  </Navbar.Collapse>
 		  </Navbar>
-	<Router basename='/'>
+	<Router basename='/frontendpgs'>
 	  	{/* <Switch> */}
 			<Route exact path="/">
 				<Home />
