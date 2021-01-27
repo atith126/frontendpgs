@@ -44,14 +44,14 @@ function App() {
 			  </Navbar.Collapse>
 		  </Navbar>
 	<Router basename='/frontendpgs'>
-	  	<Switch>
+	  	{/* <Switch> */}
 			<Route exact path="/frontendpgs">
 				<Home />
 			</Route>
 			<Route exact path="/frontendpgs/MainContainer">
 				<MainContainer />
 			</Route>
-		</Switch>
+		{/* </Switch> */}
 	</Router>
 	  <Container>
 		<Row>
