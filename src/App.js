@@ -1,15 +1,13 @@
 // import logo from './logo.svg';
 // import Nav from './Nav';
 
-import { Button, Container, Row, Navbar, Form, FormControl, Nav, NavDropdown } from 'react-bootstrap';
+// import { Button, Container, Row, Navbar, Form, FormControl, Nav, NavDropdown } from 'react-bootstrap';
 
 
-import { createHistory } from 'history';
 // import { BrowserRouter as Router, Switch, Route, useParams, } from "react-router-dom";
-import { HashRouter as Router, Route } from "react-router-dom";
-// import Home from './MainContainer';
-import Home from './Home';
-import MainContainer from './MainContainer';
+// import { HashRouter as Router, Route } from "react-router-dom";
+
+import MainApp from './MainApp';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,6 +22,12 @@ function App() {
 
   return (
 	<div className="App">
+		
+		
+		<MainApp/>
+
+
+
 	  {/* <header className="App-header"> */}
 		{/* <img src={logo} className="App-logo" alt="logo" />
 		<p>
@@ -41,33 +45,14 @@ function App() {
               <Button>Users</Button>
 	</LinkContainer> */}
 	
-		<Navbar bg="light" expand="lg">
-			  <Navbar.Brand to="#home">React-Bootstrap 2</Navbar.Brand>
-			  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-			  <Navbar.Collapse id="basic-navbar-nav">
-				  <Nav className="mr-auto">
-					  <Nav.Link href="/">Home</Nav.Link>
-					  <Nav.Link href="/MainContainer">Main Container</Nav.Link>
-				  </Nav>
-			  </Navbar.Collapse>
-		  </Navbar>
-	<Router basename='/'>
-	  	{/* <Switch> */}
-			<Route exact path="/">
-				<Home />
-			</Route>
-			<Route exact path="/MainContainer">
-				<MainContainer />
-			</Route>
-		{/* </Switch> */}
-	</Router>
-	  <Container>
+		
+	  {/* <Container>
 		<Row>
 			<div className="col-sm-12 col-md-6">1 of 1</div>
 			<div className="col-sm-12 col-md-6">1 of 1</div>
 			<div className="col-sm-12 col-md-6">1 of 1</div>
 		</Row>
-	  </Container>
+	  </Container> */}
 
 	  {/* <img src={logo} className="App-logo" alt="logo" /> */}
 	  {/* <Home /> */}
