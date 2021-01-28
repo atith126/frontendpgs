@@ -15,7 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function MainApp(){
     return (
         <div>
-            <Router>
+            <Router basename="/frontendpgs">
                 <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
                     <Navbar.Brand href="#home">React Bootstrap Navbar</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
