@@ -6,7 +6,7 @@ import { Button, Navbar, Form, FormControl, Nav, NavDropdown } from 'react-boots
 import Home from './Home';
 import MainContainer from './MainContainer';
 
-import { BrowserRouter as Router, Switch, Route, useParams, } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, useParams, } from "react-router-dom";
 
 import { createBrowserHistory } from 'history';
 
@@ -26,7 +26,7 @@ function MainApp(){
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
                             <Nav.Link href={`${process.env.PUBLIC_URL}/`}>Home</Nav.Link>
-                            <Nav.Link href={`${process.env.PUBLIC_URL}/MainContainer`}>Main</Nav.Link>
+                            <Nav.Link href={`${process.env.PUBLIC_URL}/MainContainer`}>Main 1</Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -43,8 +43,8 @@ function MainApp(){
                 </Navbar>
                 <br />
                 <Switch>
-                    <Route path="/" component={Home}/>
-                    <Route path="/MainContainer" component={MainContainer}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/MainContainer`} component={MainContainer}/>
                     {/* <Route exact path="/">
                         <Home />
                     </Route>
