@@ -25,8 +25,8 @@ function MainApp(){
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/MainContainer">Main</Nav.Link>
+                            <Nav.Link href={`${process.env.PUBLIC_URL}/`}>Home</Nav.Link>
+                            <Nav.Link href={`${process.env.PUBLIC_URL}/MainContainer`}>Main</Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
