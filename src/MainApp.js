@@ -6,7 +6,7 @@ import { Button, Navbar, Form, FormControl, Nav, NavDropdown } from 'react-boots
 import Home from './Home';
 import MainContainer from './MainContainer';
 
-import { HashRouter as Router, Switch, Route, useParams, } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, useParams, } from "react-router-dom";
 
 import { createBrowserHistory } from 'history';
 
@@ -43,12 +43,14 @@ function MainApp(){
                 </Navbar>
                 <br />
                 <Switch>
-                    <Route exact path="/">
+                    <Route path="/" component={Home}/>
+                    <Route path="/MainContainer" component={MainContainer}/>
+                    {/* <Route exact path="/">
                         <Home />
                     </Route>
-                    <Route path="/MainContainer">
+                    <Route path={`${process.env.PUBLIC_URL}/MainContainer`}>
                         <MainContainer />
-                    </Route>
+                    </Route> */}
                 </Switch>
             </Router>
 
