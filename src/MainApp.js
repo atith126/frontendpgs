@@ -6,7 +6,7 @@ import { Button, Navbar, Form, FormControl, Nav, NavDropdown } from 'react-boots
 import Home from './Home';
 import MainContainer from './MainContainer';
 
-import { BrowserRouter as Router, Switch, Route, useParams, } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, useParams, } from "react-router-dom";
 
 import { createBrowserHistory } from 'history';
 
