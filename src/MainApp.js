@@ -19,7 +19,7 @@ export const history = createBrowserHistory({
 function MainApp(){
     return (
         <div>
-            <Router basename="/frontendpgs">
+            <Router basename={process.env.PUBLIC_URL}>
                 <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
                     <Navbar.Brand href="#home">React Bootstrap Navbar</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
