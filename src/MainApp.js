@@ -8,9 +8,13 @@ import MainContainer from './MainContainer';
 
 import { BrowserRouter as Router, Switch, Route, useParams, } from "react-router-dom";
 
-
+import { createBrowserHistory } from 'history';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+export const history = createBrowserHistory({
+    basename: process.env.PUBLIC_URL
+});
 
 function MainApp(){
     return (
@@ -22,7 +26,7 @@ function MainApp(){
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
                             <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/MainContainer">Contact Us</Nav.Link>
+                            <Nav.Link href="/MainContainer">Main</Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
