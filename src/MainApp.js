@@ -12,9 +12,12 @@ import { createBrowserHistory } from 'history';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import {LinkContainer} from 'react-router-bootstrap'
+
 export const history = createBrowserHistory({
     basename: process.env.PUBLIC_URL
 });
+
 
 function MainApp(){
     return (
@@ -25,8 +28,18 @@ function MainApp(){
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href={`${process.env.PUBLIC_URL}/`}>Home</Nav.Link>
-                            <Nav.Link href={`${process.env.PUBLIC_URL}/MainContainer`}>Main 1</Nav.Link>
+                            {/* <LinkContainer to={`${process.env.PUBLIC_URL}/Home`}>
+                                <Nav.Link>Home</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to={`${process.env.PUBLIC_URL}/MainContainer`}>
+                                <Nav.Link>MainContainer</Nav.Link>
+                            </LinkContainer> */}
+                            <LinkContainer to="/Home">
+                                <Nav.Link>Home</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to="/MainContainer">
+                                <Nav.Link>MainContainer</Nav.Link>
+                            </LinkContainer>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -43,14 +56,13 @@ function MainApp(){
                 </Navbar>
                 <br />
                 <Switch>
-                    <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/MainContainer`} component={MainContainer}/>
-                    {/* <Route exact path="/">
+                    <Route exact path="/">
                         <Home />
                     </Route>
-                    <Route path={`${process.env.PUBLIC_URL}/MainContainer`}>
+                    {/* <Route path={`${process.env.PUBLIC_URL}/MainContainer`}> */}
+                    <Route path="/MainContainer">
                         <MainContainer />
-                    </Route> */}
+                    </Route>
                 </Switch>
             </Router>
 
