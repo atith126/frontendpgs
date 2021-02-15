@@ -6,17 +6,17 @@ import { Button, Navbar, Form, FormControl, Nav, NavDropdown } from 'react-boots
 import Home from './Home';
 import MainContainer from './MainContainer';
 
-import { HashRouter as Router, Switch, Route, useParams, } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, useParams, } from "react-router-dom";
 
-import { createBrowserHistory } from 'history';
+// import { createBrowserHistory } from 'history';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {LinkContainer} from 'react-router-bootstrap'
 
-export const history = createBrowserHistory({
-    basename: process.env.PUBLIC_URL
-});
+// export const history = createBrowserHistory({
+//     basename: process.env.PUBLIC_URL
+// });
 
 
 function MainApp(){
@@ -34,7 +34,7 @@ function MainApp(){
                             <LinkContainer to={`${process.env.PUBLIC_URL}/MainContainer`}>
                                 <Nav.Link>MainContainer</Nav.Link>
                             </LinkContainer> */}
-                            <LinkContainer to="/Home">
+                            <LinkContainer to="/">
                                 <Nav.Link>Home</Nav.Link>
                             </LinkContainer>
                             <LinkContainer to="/MainContainer">
