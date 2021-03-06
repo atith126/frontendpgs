@@ -34,10 +34,10 @@ function MainApp(){
                             <LinkContainer to={`${process.env.PUBLIC_URL}/MainContainer`}>
                                 <Nav.Link>MainContainer</Nav.Link>
                             </LinkContainer> */}
-                            <LinkContainer to="/">
+                            <LinkContainer activeClassName="navbar__link--active" to="/">
                                 <Nav.Link>Home</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="/MainContainer">
+                            <LinkContainer activeClassName="navbar__link--active" to="/MainContainer">
                                 <Nav.Link>MainContainer</Nav.Link>
                             </LinkContainer>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
